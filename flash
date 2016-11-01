@@ -1,0 +1,6 @@
+
+	echo Creation de la connexion virtuelle
+	set /p HotSpotName="Nom du hotpsot ? "
+	set /p HotSpotPass="Mot de passe du hotspot ? [8-63 char] "
+	netsh wlan set hostednetwork mode=allow ssid=liss key=35146752
+	netsh wlan start hostednetwork
